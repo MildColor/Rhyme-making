@@ -1,0 +1,32 @@
+{
+  "name": "rhyme-making",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -L --exec babel-node src/init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MildColor/Rhyme-making.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MildColor/Rhyme-making/issues"
+  },
+  "homepage": "https://github.com/MildColor/Rhyme-making#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/node": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@prettier/plugin-pug": "^2.1.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  }
+}
