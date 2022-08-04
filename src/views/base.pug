@@ -2,11 +2,18 @@ doctype html
 html(lang="ko")
   head
     title #{ pageTitle } | Rhyme Making
+    link(rel="stylesheet", href="https://unpkg.com/mvp.css")
 
   body 
     header 
       h1= pageTitle
-      block homelink
+        nav 
+          span 
+            a(href="/") Home
+          span 
+            a(href="/upload") upload
+          span 
+            a(href="/feedback") Feedback
 
     main 
       block content

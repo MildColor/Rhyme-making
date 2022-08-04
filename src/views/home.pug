@@ -1,12 +1,5 @@
 extends base
 
-block homelink
-  span 
-    a(href="/") Home
-  span 
-    a(href="/feedback") Feedback
-  span 
-    a(href="/feedback") Feedback
-
 block content
-  input(placeholder="Searching the Word", type="text", name="searching-bar")
+  form(action="GET") 
+    input(placeholder="Searching the Word", type="text", name="search")
