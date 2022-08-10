@@ -1,5 +1,11 @@
 extends base
+include mixins/word
 
 block content
-  form(action="GET") 
-    input(placeholder="Searching the Word", type="text", name="search")
+  form(method="GET") 
+    input(placeholder="Searching the Word", type="text", name="keyword")
+    input(value="Search", type="submit") 
+  hr
+  div 
+    each word in words 
+      +word(word)

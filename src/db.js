@@ -1,11 +1,12 @@
 import mongoose from "mongoose";
 
-mongoose.connect("moongodb://127.0.0.1:27017/Rhyme-making");
+//rhymer라는 이름의 db만들기
+mongoose.connect("mongodb://127.0.0.1:27017/rhymer");
 
 const db = mongoose.connection;
 
-const handleOpen = () => console.log("✅Connected to DB");
-const handleError = (error) => console.log("❌DB Error", error);
+const handleOpen = () => console.log("✅ Connected to DB");
+const handleError = (error) => console.log("❌ DB Error", error);
 
 db.on("error", handleError);
-db.once("opne", handleOpen);
+db.once("open", handleOpen);

@@ -1,7 +1,9 @@
 extends base
 
 block content
+  if errorMessage
+    span= errorMessage
   form(method="POST")
-    input(placeholder="Word", type="text", name="word")
+    input(placeholder="Word", type="text", name="spell")
     input(placeholder="Mean", type="text", name="mean")
     input(value="Save", type="submit") 
