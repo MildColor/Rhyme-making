@@ -19,3 +19,8 @@ export const postUpload = async (req, res) => {
     });
   }
 };
+
+export const getEdit = (req, res) => {
+  return res.render("edit", { pageTitle: "edit" });
+};
+export const postEdit = (req, res) => {};

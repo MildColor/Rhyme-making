@@ -1,5 +1,6 @@
 mixin word(word)
   div
-    p= word.spell
-    p= word.mean
+    details 
+      summary= word.spell
+      p= word.mean
       hr
