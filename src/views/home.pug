@@ -2,11 +2,17 @@ extends base
 include mixins/word
 
 block content
-  form(method="GET") 
-    input(placeholder="Searching the Word", type="text", name="keyword")
-    input(value="Search", type="submit") 
+  .form-content
+    form.home__form(method="GET")
+      input#home__searchingbar(
+        placeholder="Searching the Word...",
+        type="text",
+        name="keyword"
+      )
+      //- button
+      //-   i.fas.fa-search
   hr
-  div 
+  .wordlist 
     each word in words 
       +word(word)
     else

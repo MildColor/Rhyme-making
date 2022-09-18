@@ -11,6 +11,13 @@ export const home = async (req, res) => {
   return res.render("home", { pageTitle: "RHYMER", words });
 };
 
+export const getLogin = (req, res) => {
+  return res.render("login");
+};
+export const postLogin = (req, res) => {
+  return res.render("login");
+};
+
 export const feedback = (req, res) => {
   return res.render("feedback", { pageTitle: "Feedback" });
 };

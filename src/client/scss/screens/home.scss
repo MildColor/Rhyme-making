@@ -1,0 +1,41 @@
+.form-content {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .home__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 45px 0px;
+
+    input {
+      all: unset;
+      text-align: center;
+      width: 60%;
+      height: 30px;
+      padding: 0 15px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(8.5px);
+      -webkit-backdrop-filter: blur(8.5px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: rgba(255, 255, 255, 0.8);
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+
+    button {
+      right: 15px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+
+.wordlist {
+  margin: 30px 0px;
+  color: rgba(255, 255, 255, 0.8);
+}
